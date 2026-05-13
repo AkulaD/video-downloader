@@ -3,37 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Downloader</title>
+    <title>Instagram Downloader | Next-Gen</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="row">
-            <div class="left">
-                <h1>Downloader</h1>
+    <div class="background-overlay"></div>
+
+    <main class="content-wrapper">
+        <section class="info-section">
+            <div class="badge">Instagram Edition</div>
+            <h1>Download <span>Instagram</span> Reels & Photos</h1>
+            <p>Simpan Reels, Foto, dan Video dari Instagram dengan kualitas original. Cepat, mudah, dan tentu saja gratis untuk digunakan kapan saja.</p>
+            
+            <div class="status-info">
+                <span><i class="fas fa-camera-retro"></i> Reels & Posts</span>
+                <span><i class="fas fa-user-shield"></i> No Login</span>
+                <span><i class="fas fa-download"></i> HD Quality</span>
             </div>
-            <div class="right">
-                <ul>
-                    <li class="active">Instagram</li>
-                    <li><a href="../tiktok-download/index.html">Tiktok</a></li>
-                    <li><a href="../youtube-download/index.html">Youtube</a></li>
-                </ul>
+        </section>
+
+        <section class="menu-card">
+            <nav class="tabs">
+                <a href="#" class="tab-link active">Instagram</a>
+                <a href="../tiktok-download/index.html" class="tab-link">TikTok</a>
+                <a href="../youtube-download/index.html" class="tab-link">YouTube</a>
+            </nav>
+
+            <div class="tool-content">
+                <div class="input-wrapper">
+                    <input type="text" id="videoLink" placeholder="Paste Instagram link here...">
+                    <div class="input-actions">
+                        <span class="divider"></span>
+                        <button id="pasteBtn" title="Paste Link">
+                            <i class="fas fa-paste"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button id="downloadBtn" class="btn-main insta-btn">
+                        <i class="fas fa-images"></i> Fetch Content
+                    </button>
+                </div>
+
+                <div class="preview" id="previewSection">
+                    <!-- Konten akan dirender oleh script.js -->
+                </div>
             </div>
-        </div>
-    </header>
-    
-    <main>
-        <div class="content">
-            <h1>Instagram Downloader</h1>
-            <div class="input-wrapper">
-                <input type="text" id="videoLink" placeholder="Paste Link Here">
-                <span class="divider">|</span>
-                <img src="paste.png" alt="paste" id="pasteBtn">
-            </div>
-            <button id="downloadBtn">Download</button>
-        </div>
+        </section>
     </main>
 </body>
 </html>

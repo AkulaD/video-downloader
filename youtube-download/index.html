@@ -3,42 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Downloader</title>
+    <title>YouTube Downloader | Next-Gen</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="row">
-            <div class="left">
-                <h1>Downloader</h1>
-            </div>
-            <div class="right">
-                <ul>
-                    <li><a href="../instagram-download/index.html">Instagram</a></li>
-                    <li><a href="../tiktok-download/index.html">Tiktok</a></li>
-                    <li class="active">Youtube</li>
-                </ul>
-            </div>
-        </div>
-    </header>
-    
-    <main>
-        <div class="content">
-            <h1>Tiktok Downloader</h1>
-            <div class="input-wrapper">
-                <input type="text" id="videoLink" placeholder="Paste Link Here">
-                <span class="divider">|</span>
-                <img src="paste.png" alt="paste" id="pasteBtn">
-            </div>
-            <button id="downloadVideo">Download Video</button>
-            <button id="downloadAudio">Download MP3</button>
+    <div class="background-overlay"></div>
 
-            <div class="preview" id="previewSection">
-                <!-- Konten video akan muncul di sini melalui JS -->
+    <main class="content-wrapper">
+        <section class="info-section">
+            <div class="badge">YouTube Edition</div>
+            <h1>The Fastest <span>YouTube</span> Video Saver</h1>
+            <p>Konversi dan unduh video YouTube ke dalam format MP4 atau MP3 dengan kualitas terbaik. Simpan video favoritmu langsung ke galeri.</p>
+            
+            <div class="status-info">
+                <span><i class="fas fa-play-circle"></i> 4K Support</span>
+                <span><i class="fas fa-music"></i> High Bitrate</span>
+                <span><i class="fas fa-bolt"></i> Fast Render</span>
             </div>
-        </div>
+        </section>
+
+        <section class="menu-card">
+            <nav class="tabs">
+                <a href="../instagram-download/index.html" class="tab-link">Instagram</a>
+                <a href="../tiktok-download/index.html" class="tab-link">TikTok</a>
+                <a href="#" class="tab-link active">YouTube</a>
+            </nav>
+
+            <div class="tool-content">
+                <div class="input-wrapper">
+                    <input type="text" id="videoLink" placeholder="Paste YouTube link here...">
+                    <div class="input-actions">
+                        <span class="divider"></span>
+                        <button id="pasteBtn" title="Paste Link">
+                            <i class="fas fa-paste"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button id="downloadVideo" class="btn-main youtube-btn">
+                        <i class="fas fa-video"></i> Get Video
+                    </button>
+                    <button id="downloadAudio" class="btn-sub">
+                        <i class="fas fa-headphones"></i> Get MP3
+                    </button>
+                </div>
+
+                <div class="preview" id="previewSection">
+                    <!-- Preview dari script.js -->
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>

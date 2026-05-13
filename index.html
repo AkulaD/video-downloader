@@ -6,53 +6,73 @@
     <title>Multi Downloader - High Speed</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="background-overlay"></div>
-    <main>
-        <section class="container">
-            <div class="content-wrapper">
-                <div class="left-section">
-                    <div class="badge">AIO Downloader</div>
-                    <h1>Unduh Video <span>Tanpa Batas</span></h1>
-                    <p>Platform tercepat untuk mengunduh konten favorit kamu dari YouTube, TikTok, dan Instagram dalam kualitas terbaik.</p>
-                    <div class="status-info">
-                        <span><i class="fas fa-check-circle"></i> Gratis</span>
-                        <span><i class="fas fa-bolt"></i> Cepat</span>
-                        <span><i class="fas fa-shield-alt"></i> Aman</span>
-                    </div>
+    
+    <main class="container">
+        <div class="content-wrapper">
+            <!-- Left Section: Branding -->
+            <section class="left-section">
+                <div class="badge">AIO Downloader</div>
+                <h1>Unduh Video <br><span>Tanpa Batas</span></h1>
+                <p>Platform tercepat dan gratis untuk mengunduh konten favorit kamu dari media sosial dalam kualitas HD tanpa watermark.</p>
+                
+                <div class="status-info">
+                    <span><i class="fas fa-check-circle"></i> Gratis</span>
+                    <span><i class="fas fa-bolt"></i> Cepat</span>
+                    <span><i class="fas fa-shield-alt"></i> Aman</span>
                 </div>
+            </section>
 
-                <div class="right-section">
-                    <div class="menu-card">
-                        <h3>Pilih Platform</h3>
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a href="instagram-download/index.html" class="nav-link instagram">
+            <!-- Right Section: Platform Selector -->
+            <section class="right-section">
+                <div class="menu-card">
+                    <h3>Pilih Platform</h3>
+                    <nav class="platform-nav">
+                        <ul>
+                            <li>
+                                <a href="instagram-download/index.html" class="nav-link instagram">
+                                    <div class="icon-box">
                                         <i class="fab fa-instagram"></i>
-                                        <span>Instagram</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="tiktok-download/index.html" class="nav-link tiktok">
+                                    </div>
+                                    <div class="link-text">
+                                        <span class="platform-name">Instagram</span>
+                                        <span class="platform-desc">Reels, Photo, Video</span>
+                                    </div>
+                                    <i class="fas fa-chevron-right arrow"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tiktok-download/index.html" class="nav-link tiktok">
+                                    <div class="icon-box">
                                         <i class="fab fa-tiktok"></i>
-                                        <span>TikTok</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="youtube-download/index.html" class="nav-link youtube">
+                                    </div>
+                                    <div class="link-text">
+                                        <span class="platform-name">TikTok</span>
+                                        <span class="platform-desc">No Watermark HD</span>
+                                    </div>
+                                    <i class="fas fa-chevron-right arrow"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="youtube-download/index.html" class="nav-link youtube">
+                                    <div class="icon-box">
                                         <i class="fab fa-youtube"></i>
-                                        <span>YouTube</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
+                                    </div>
+                                    <div class="link-text">
+                                        <span class="platform-name">YouTube</span>
+                                        <span class="platform-desc">MP4 & MP3 Audio</span>
+                                    </div>
+                                    <i class="fas fa-chevron-right arrow"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 </body>
 </html>

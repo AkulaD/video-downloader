@@ -3,41 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Downloader</title>
+    <title>TikTok Downloader | Next-Gen</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="row">
-            <div class="left">
-                <h1>Downloader</h1>
-            </div>
-            <div class="right">
-                <ul>
-                    <li><a href="../instagram-download/index.html">Instagram</a></li>
-                    <li class="active">Tiktok</li>
-                    <li><a href="../youtube-download/index.html">Youtube</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
-    
-    <main>
-        <div class="content">
-            <h1>Tiktok Downloader</h1>
-            <div class="input-wrapper">
-                <input type="text" id="videoLink" placeholder="Paste Link Here">
-                <span class="divider">|</span>
-                <img src="paste.png" alt="paste" id="pasteBtn">
-            </div>
-            <button id="downloadBtn">Download</button>
+    <div class="background-overlay"></div>
 
-            <div class="preview" id="previewSection">
-                <!-- Konten video akan muncul di sini melalui JS -->
+    <main class="content-wrapper">
+        <section class="info-section">
+            <div class="badge">TikTok Edition</div>
+            <h1>Save Your <span>TikTok</span> Videos Instantly</h1>
+            <p>Download video TikTok tanpa watermark dengan kualitas HD. Cukup tempel link dan simpan konten favoritmu dalam hitungan detik.</p>
+            
+            <div class="status-info">
+                <span><i class="fas fa-bolt"></i> No Watermark</span>
+                <span><i class="fas fa-shield-alt"></i> Safe & Secure</span>
+                <span><i class="fas fa-infinity"></i> Unlimited</span>
             </div>
-        </div>
+        </section>
+
+        <section class="menu-card">
+            <nav class="tabs">
+                <a href="../instagram-download/index.html" class="tab-link">Instagram</a>
+                <a href="#" class="tab-link active">TikTok</a>
+                <a href="../youtube-download/index.html" class="tab-link">YouTube</a>
+            </nav>
+
+            <div class="tool-content">
+                <div class="input-wrapper">
+                    <input type="text" id="videoLink" placeholder="Paste TikTok URL here...">
+                    <div class="input-actions">
+                        <span class="divider"></span>
+                        <button id="pasteBtn" title="Paste Link">
+                            <i class="fas fa-paste"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button id="downloadBtn" class="btn-main">
+                        <i class="fas fa-cloud-download-alt"></i> Download Now
+                    </button>
+                </div>
+
+                <div class="preview" id="previewSection">
+                    <!-- Konten dari JS -->
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
